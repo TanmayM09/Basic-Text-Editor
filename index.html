@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Text Editor</h1>
+    </header>
+    <div class="editor-container">
+        <div id="editor" contenteditable="true"></div>
+    </div>
+    <div class="controls">
+        <button id="boldBtn" class="format-button">Bold</button>
+        <button id="italicBtn" class="format-button">Italic</button>
+        <button id="underlineBtn" class="format-button">Underline</button>
+        <button id="undoBtn" class="format-button">Undo</button>
+        <button id="redoBtn" class="format-button">Redo</button>
+        <button id="saveBtn" class="action-button">Save</button>
+        <button id="clearBtn" class="action-button">Clear</button>
+    </div>
+    <div id="output" class="output-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

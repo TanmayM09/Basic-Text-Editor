@@ -1,0 +1,117 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Gradient background */
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+.header {
+    background-color: #0a3c5e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+
+.header-title {
+    margin: 0;
+}
+
+/* Button styles */
+.format-button {
+    padding: 10px 20px;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.format-button:hover {
+    background-color: #219a52;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.action-button:hover {
+    background-color: #c0392b;
+}
+
+/* Editor container styles */
+.editor-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ecf0f1;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Output container styles */
+.output-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Customize the caret and selection */
+#editor {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.5;
+    border: none;
+    caret-color: #e74c3c; 
+    background-color: #fff; 
+}
+
+#editor::selection {
+    background-color: #3498db; 
+    color: #fff; 
+}
+/* Media query for screens 768px and below */
+@media (max-width: 768px) {
+    .controls {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .format-button {
+        margin: 5px 0; 
+    }
+}
+
+/* Media query for screens 480px and below */
+@media (max-width: 480px) {
+    .format-button {
+        padding: 5px 10px; 
+        font-size: 14px; 
+    }
+}
